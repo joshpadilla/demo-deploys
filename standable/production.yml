@@ -1,0 +1,37 @@
+#file: production
+
+[us-west-webservers]
+www-west-1.standable.org
+www-west-2.standable.org
+
+[us-east-webservers]
+www-east-1.standable.org
+www-east-2.standable.org
+
+[us-west-dbservers]
+db-west-1.standable.org
+db-west-2.standable.org
+
+[us-east-dbservers]
+db-east-1.standable.org
+db-east-2.standable.org
+
+# webservers in all geos
+[webservers:children]
+at-webservers
+east-webservers
+
+# dbservers in all geos
+[dbservers:children]
+west-dbservers
+east-dbservers
+
+# everything in the west geo
+[west:children]
+west-webservers
+west-dbservers
+
+# everything in the east geo
+[east:children]
+east-webservers
+east-dbservers
