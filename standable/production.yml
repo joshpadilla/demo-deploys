@@ -1,5 +1,4 @@
 #file: production
-
 [us-west-webservers]
 www-west-1.standable.org
 www-west-2.standable.org
