@@ -1,5 +1,4 @@
 #file: production
-
 [us-west-webservers]
 www-west-1.standable.org
 www-west-2.standable.org
@@ -26,7 +25,7 @@ east-webservers
 west-dbservers
 east-dbservers
 
-# everything in the west geo
+# everything in west geo
 [west:children]
 west-webservers
 west-dbservers
