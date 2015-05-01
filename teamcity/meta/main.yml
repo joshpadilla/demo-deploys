@@ -1,0 +1,24 @@
+---
+galaxy_info:
+  author: Josh Padilla
+  description: TeamCity build server role
+  license: BSD
+  min_ansible_version: 1.2
+  platforms:
+  name: Ubuntu
+  versions:
+   - trusty
+  categories:
+  #- cloud
+  #- cloud:ec2
+  #- database
+  #- database:sql
+  #- development
+  #- system
+  #- web
+dependencies: []
+  # List your role dependencies here, one per line. Only
+  # dependencies available via galaxy should be listed here.
+  # Be sure to remove the '[]' above if you add dependencies
+  # to this list.
+  
